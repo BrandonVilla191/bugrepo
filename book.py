@@ -8,9 +8,9 @@ class Book:
     def read(self, pages):
         self.current_page += pages
         if self.current_page > self.pages:
-            print(f"You've finished reading {self.title} by {self.author}!")
+            print(f"You've finished reading!")
         else:
-            print(f"You're now on page {self.current_page} of {self.title}.")
+            print(f"You're now on page")
 
     def bookmark(self, page_number):
         self.current_page = page_number
@@ -37,6 +37,6 @@ if __name__ == "__main__":
     my_library.add_book(harry_potter)
     book_found = my_library.find_book("Harry Potter and the Sorcerer's Stone")
     if book_found:
-        print(f"Found {book_found.title} in the library!")
+        print(f"Found in the library!")
     else:
         print("Book not found in the library.")  # This will be printed due to the bug
